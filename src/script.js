@@ -1,5 +1,6 @@
 function addApi(response) {
-  console.log(response.data);
+  let poemElement = document.querySelector("#poem");
+  poemElement.innerHTML = response.data.answer;
 }
 
 function generatePoem(event) {

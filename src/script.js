@@ -22,10 +22,5 @@ function getInput(event) {
   axios.get(apiUrl).then(addApi);
 }
 
-function generatePoem(event) {}
-
-// let inputSearch = document.querySelector("#search-txt");
-// inputSearch.addEventListener("change", getInput);
-
 let poemForm = document.querySelector("#generator-form");
 poemForm.addEventListener("submit", getInput);

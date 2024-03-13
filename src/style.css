@@ -24,7 +24,7 @@ form {
 }
 
 form #search-txt {
-  width: 500px;
+  width: 515px;
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #a3a3a3;
@@ -41,7 +41,18 @@ form #search-btn {
 }
 
 #poem {
-  padding: 20px 12px;
+  padding: 12px 12px 0 12px;
+}
+
+.poem-title {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.poem-text {
+  line-height: 1.5;
+  font-size: 14px;
+  margin-bottom: 30px;
 }
 
 footer {

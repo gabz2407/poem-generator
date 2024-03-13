@@ -9,38 +9,40 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <div id="content">
+    <div id="form-container">
       <h1>Poem Generator</h1>
-      <main>
-        <form id="generator-form">
-          <input
-            type="search"
-            id="search-txt"
-            placeholder="Enter a topic for your poem"
-            required
-            autofocus
-          />
-          <input type="submit" id="search-btn" />
-        </form>
-        <div id="poem"></div>
-      </main>
-      <footer>
-        This project was coded by
-        <a
-          href="https://www.linkedin.com/in/gabriela-agostinho-378b67207/"
-          target="_blank"
-          class="footer-link"
-          >Gabriela Agostinho</a
-        >
-        and it is open-sourced on
-        <a
-          href="https://github.com/gabz2407/ai-poem-generator"
-          target="_blank"
-          class="footer-link"
-          >GitHub</a
-        >
-      </footer>
+      <form id="generator-form">
+        <input
+          type="search"
+          id="search-txt"
+          placeholder="Enter a topic for your poem"
+          required
+          autofocus
+        />
+        <input type="submit" id="search-btn" />
+      </form>
     </div>
+    <div id="poem-container" class="hidden">
+      <div id="poem" class="poem hidden"></div>
+    </div>
+
+    <footer>
+      This project was coded by
+      <a
+        href="https://www.linkedin.com/in/gabriela-agostinho-378b67207/"
+        target="_blank"
+        class="footer-link"
+        >Gabriela Agostinho</a
+      >
+      and it is open-sourced on
+      <a
+        href="https://github.com/gabz2407/ai-poem-generator"
+        target="_blank"
+        class="footer-link"
+        >GitHub</a
+      >
+    </footer>
+
     <script src="src/script.js"></script>
   </body>
 </html>

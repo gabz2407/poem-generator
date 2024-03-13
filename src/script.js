@@ -1,5 +1,5 @@
 function addApi(response) {
-  new Typewriter("#poem", {
+  new Typewriter(".poem", {
     strings: response.data.answer,
     autoStart: true,
     delay: 1,
@@ -8,11 +8,11 @@ function addApi(response) {
 }
 
 function getInput(event) {
+  event.preventDefault();
   let input = event.target.value;
 
   let poem = document.querySelector("#poem-container");
   poem.classList.remove("hidden");
-  poem.innerHTML = "Generating poem...";
 
   let prompt = `Generate a poem about ${input} in this format: <h2 class="poem-title">title</h2><p class="poem-text">poem</p>`;
   let context = `Accordingly to your knowledge, generate a beautiful poem with two stanzas `;
@@ -22,12 +22,10 @@ function getInput(event) {
   axios.get(apiUrl).then(addApi);
 }
 
-function generatePoem(event) {
-  event.preventDefault();
+function generatePoem(event) {}
 
-  let inputSearch = document.querySelector("#search-txt");
-  inputSearch.addEventListener("search", getInput);
-}
+// let inputSearch = document.querySelector("#search-txt");
+// inputSearch.addEventListener("change", getInput);
 
 let poemForm = document.querySelector("#generator-form");
-poemForm.addEventListener("submit", generatePoem);
+poemForm.addEventListener("submit", getInput);

@@ -43,16 +43,12 @@ form #search-btn {
 #poem-container {
   background-color: white;
   margin: 10px auto;
-  width: 600px;
-  padding: 20px;
+  max-width: 600px;
+  padding: 20px 20px 20px 30px;
   border-radius: 10px;
   box-shadow: 10px 10px 10px rgba(105, 105, 105, 0.423);
   font-size: 13px;
   color: rgb(124, 94, 94);
-}
-
-.poem {
-  padding: 12px 12px 0 12px;
 }
 
 .hidden {
@@ -62,12 +58,14 @@ form #search-btn {
 .poem-title {
   font-size: 18px;
   font-weight: lighter;
+  color: black;
 }
 
 .poem-text {
   line-height: 1.5;
   font-size: 14px;
   margin-bottom: 30px;
+  color: black;
 }
 
 footer {

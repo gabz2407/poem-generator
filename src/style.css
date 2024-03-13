@@ -59,7 +59,7 @@ form #search-btn {
   font-size: 18px;
   font-weight: lighter;
   color: black;
-  margin-left: 5px;
+  margin: 5px 0 15px 10px;
 }
 
 .poem-text {
@@ -67,7 +67,13 @@ form #search-btn {
   font-size: 14px;
   margin-bottom: 30px;
   color: black;
-  margin-left: 5px;
+  margin-left: 10px;
+}
+
+.poem strong {
+  margin-left: 10px;
+
+  color: rgb(103, 70, 70);
 }
 
 footer {

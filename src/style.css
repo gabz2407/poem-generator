@@ -1,11 +1,15 @@
 body {
-  background-color: rgba(119, 95, 95, 0.635);
+  background-color: #9ba58b;
+  background-image: url("/src/images/poems.jpeg");
+  background-size: 1290px 853px;
+  background-position: top;
+  background-repeat: no-repeat;
   font-family: sans-serif;
 }
 
 #form-container {
-  margin: 50px auto 20px auto;
-  width: 600px;
+  margin: 120px auto 20px auto;
+  width: 400px;
   background-color: white;
   padding: 20px;
   border-radius: 10px;
@@ -36,14 +40,14 @@ form #search-btn {
   border-radius: 5px;
   border: none;
   color: white;
-  background-color: rgb(124, 94, 94);
+  background-color: #da7c78;
   font-size: 12px;
 }
 
 #poem-container {
   background-color: white;
   margin: 10px auto;
-  max-width: 600px;
+  max-width: 400px;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 10px 10px 10px rgba(105, 105, 105, 0.423);
@@ -80,9 +84,12 @@ footer {
   text-align: center;
   padding: 25px 0 5px 0;
   font-size: 12px;
+  color: rgb(190, 190, 190);
+  position: relative;
+  bottom: 20px;
 }
 
 footer a {
   text-decoration: none;
-  color: rgb(103, 70, 70);
+  color: #da7b78d1;
 }

@@ -1,7 +1,7 @@
 body {
   background-color: #9ba58b;
   background-image: url("/src/images/poems.jpeg");
-  background-size: 1290px 853px;
+  background-size: 1435px 988px;
   background-position: top;
   background-repeat: no-repeat;
   font-family: sans-serif;
@@ -9,7 +9,7 @@ body {
 
 #form-container {
   margin: 120px auto 20px auto;
-  width: 400px;
+  max-width: 400px;
   background-color: white;
   padding: 20px;
   border-radius: 10px;
@@ -76,7 +76,6 @@ form #search-btn {
 
 .poem strong {
   margin-left: 10px;
-
   color: rgb(103, 70, 70);
 }
 
@@ -90,4 +89,10 @@ footer {
 footer a {
   text-decoration: none;
   color: #da7b78d1;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-size: 1160px 896px;
+  }
 }
